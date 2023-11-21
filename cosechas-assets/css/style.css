@@ -1,0 +1,237 @@
+/* originally authored by AlexCGDesign - https://alexcgdesign.com/blog/como-hacer-galeria-de-imagenes-adaptables-a-dispositivos-moviles-con-html-y-css-efecto-overlay-💻/ */
+/* originally authored by SLeeDw20 - https://github.com/SLeeDw20/efecto-hover-img */
+
+/*===================SECCION BANNER==========================*/
+
+#seccion-banner {
+  /* width: 100%;
+  height: 350px; */
+  /* overflow: hidden; */
+  position: relative;
+}
+
+#seccion-banner .contenido-banner {
+  /* display: grid;
+  place-items: center; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 350px;
+}
+
+.contenido-banner img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.contenido-banner h1 {
+  font-size: 120px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 4.3px;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/*===========================SECCION GALERIA==================================*/
+
+/* #seccion-galeria{
+  font-family: 'open sans';
+}
+
+#seccion-galeria h1{
+  text-align: center;
+  margin:20px 0 15px 0;
+  font-weight: 300;
+}
+
+.linea{
+  border-top: 5px solid #0077C0;
+  margin-bottom: 40px;
+} */
+
+.contenedor-imagenes {
+  display: flex;
+  /* width: 85%; */
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  /* border-radius: 3px; */
+}
+
+.contenedor-imagenes .imagen {
+  /* width: 32%; */
+  width: 50%;
+  position: relative;
+  /* height: 250px; */
+  height: 500px;
+  /* margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75) */
+
+  /* position: relative;
+  height: 250px; */
+  cursor: pointer;
+  /* width: 350px; */
+  overflow: hidden;
+  /* border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.50); */
+}
+
+.imagen {
+  margin: 1px;
+}
+
+.contenedor-imagenes .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* width: 100%;
+  height: 100%; */
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedor-imagenes .imagen .overlay {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(167, 191, 48, 0.781);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease; */
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0,103,123,0.7); */
+  transition: all 400ms ease-out;
+  /* opacity: 0;
+  visibility: hidden; */
+  text-align: center;
+
+  opacity: 0.7;
+}
+
+/* .overlay h2{
+  color: #fff;
+  font-weight: 300;
+  font-size:30px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+  height: 100%;
+  cursor: pointer;
+} */
+
+.contenedor-imagenes .imagen .overlay h2 {
+  color: #fff;
+  font-weight: 300;
+  /* font-size: 30px; */
+
+  font-size: 35px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+  /* color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px; */
+}
+
+/* .contenedor-imagenes .imagen .overlay p{
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+} */
+
+.contenedor-imagenes .imagen:hover > .overlay {
+  /* background:rgba(167, 191, 48, 1); */
+
+  opacity: 1;
+  visibility: visible;
+}
+
+/* .contenedor-imagenes .imagen:hover > .overlay h2{
+  margin-top: 70px;
+  margin-bottom: 15px;
+} */
+
+.contenedor-imagenes .imagen:hover > img {
+  transform: scale(1.3);
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width: 1200px) {
+  #seccion-banner .contenido-banner h1 {
+    font-size: 110px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+@media (max-width: 825px) {
+  /* #seccion-banner{ text-align: center; height: auto!important; background-size: cover!important;  background-attachment: fixed!important; background-position: center center!important} */
+
+  #seccion-banner .contenido-banner h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #seccion-banner .contenido-banner h1 {
+    font-size: 80px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+  #seccion-banner .contenido-banner {
+    height: 200px;
+  }
+
+  #seccion-banner .contenido-banner h1 {
+    font-size: 40px;
+  }
+
+  .contenedor-imagenes {
+    flex-wrap: wrap;
+  }
+
+  .contenedor-imagenes .imagen {
+    width: 100%;
+    /* height: 250px; */
+    height: 200px;
+  }
+
+  .contenedor-imagenes .imagen .overlay h2 {
+    font-size: 25px;
+  }
+}

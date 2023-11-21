@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Cosechas Toto</title>
+    <link rel="shortcut icon" href="index-assets/img/pngegg.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="index-assets/css/style.css" />
+  </head>
+
+  <body>
+    <!--========================================================== -->
+    <!-- ENCABEZADO -->
+    <!--========================================================== -->
+
+    <header class="menu">
+      <nav class="nav">
+        <a href="index.html"
+          ><img class="logo" src="index-assets/img/logo.png" alt="Logo"
+        /></a>
+
+        <ul class="enlaces-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cosechas.html">Cosechas</a></li>
+          <!-- <li><a href="#">Recetas</a></li> -->
+          <li><a href="#seccion-contacto">Contacto</a></li>
+        </ul>
+
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+          <!-- <div class="menu-bar">Menú</div>
+                <div class="cerrar-bar">Cerrar</div> -->
+        </button>
+      </nav>
+    </header>
+
+    <!--========================================================== -->
+    <!-- CAROUSEL -->
+    <!--========================================================== -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide conetnido-pagina"
+      data-bs-ride="carousel"
+    >
+      <!-- Controles de indicadores -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="max-height: 90vh">
+          <img
+            src="index-assets/img/slider/shutterstock_image.jpg"
+            class="d-block w-100"
+            alt="slide1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h6>First slide label</h6>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="max-height: 90vh">
+          <img
+            src="index-assets/img/slider/shutterstock_image (1).jpg"
+            class="d-block w-100"
+            alt="slide2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h6>Second slide label</h6>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="max-height: 90vh">
+          <img
+            src="index-assets/img/slider/pexels-matthias-oben-3687927.jpg"
+            class="d-block w-100"
+            alt="slide3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h6>Third slide label</h6>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Controles NEXT y PREV -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--========================================================== -->
+    <!-- INTRODUCCION DE SERVICIOS-->
+    <!--========================================================== -->
+
+    <section
+      class="d-flex flex-column justify-content-center align-items-center pt-5 text-center w-50 m-auto"
+      id="intro"
+    >
+      <h1 class="p-3 fs-4 border-top border-3">
+        Cosechas libres de <span class="text-success">residuos químicos</span>
+      </h1>
+      <p class="p-3 fs-6">
+        En <span class="text-success">Cosechas Toto</span> contamos con el
+        cuidado y mantenimiento de nuestras cosechas para brindarle un excelente
+        producto a nuestros clientes, utilizando fertilizantes ecológicos y no
+        optando por utilizar productos que contengan residuos químicos.
+      </p>
+    </section>
+
+    <!--========================================================== -->
+    <!-- TIPOS DE SERVICIOS-->
+    <!--========================================================== -->
+
+    <section id="servicios" class="w-100">
+      <div class="row w-100 mx-auto mb-5" id="servicios-fila-1">
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+        >
+          <img
+            src="./index-assets/img/580b57fcd9996e24bc43c1a7.png"
+            class="servicios-imagen"
+            alt="Frutas"
+            width="180"
+            height="160"
+          />
+
+          <div class="servicios-caja-texto">
+            <h3 class="fs-4 mt-4 px-4 pb-1">Frutas</h3>
+            <p class="fs-6 px-1">
+              Frutas frescas del campo como; cocos, nanches, papayas, plátanos,
+              entre otros.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+        >
+          <img
+            src="./index-assets/img/kisspng-fruit-salad-vegetable-dried-fruit-verduras-5b36ea966b8522.4342068715303256544404.png"
+            class="servicios-imagen"
+            alt="Verduras"
+            width="180"
+            height="160"
+          />
+
+          <div class="servicios-caja-texto">
+            <h3 class="fs-4 mt-4 px-4 pb-1">Verduras</h3>
+            <p class="fs-6 px-1">
+              Verduras cosechadas al momento como; camote, yuca, nopal, cruceta,
+              entre otros.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row w-100 mx-auto mb-5" id="servicios-fila-2">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="./index-assets/img/64278e256d78d163dbe620b73b88f196.png" class="servicios-imagen"
+                    alt="Recetas" width="180" height="160">
+
+                <div class="servicios-caja-texto">
+                    <h3 class="fs-4 mt-4 px-4 pb-1">Recetas de comida</h3>
+                    <p class="fs-6 px-1">Recetas de comida de todas las cosechas, con el objetivo de ver cuales son las
+                        variedades de recetas que puede conseguir con ellas.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="./index-assets/img/foto_chilaquiles-1.png" class="servicios-imagen" alt="Restaurante"
+                    width="180" height="160">
+
+                <div class="servicios-caja-texto">
+                    <h3 class="fs-4 mt-4 px-4 pb-1">Restaurante</h3>
+                    <p class="fs-6 px-1">El restaurante utiliza todas las cosechas para el uso de sus recetas y lograr
+                        platillos especiales para nuestros clientes. La ubicación del restaurante la comparte con
+                        Cosechas
+                        Toto.</p>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!--========================================================== -->
+    <!-- SECCION ACERCA DE NOSOTROS -->
+    <!--========================================================== -->
+
+    <section>
+      <div class="container w-50 m-auto text-center" id="equipo">
+        <h1 class="mb-5 fs-4">
+          Cada uno cosecha <span class="text-success">lo que siembra</span>.
+        </h1>
+        <p class="fs-6">
+          Si usted desea visitarnos, lo esperamos para que tenga una experiencia
+          agradable y gustosa con nuestras cosechas.
+        </p>
+      </div>
+
+      <!-- <div class="mt-5 text-center">
+            <img id="img-equipo" src="./img/equipo.jpg" alt="equipo">
+        </div> -->
+
+      <div id="local" class="border-top border-2">
+        <!-- <div class="mapa"> </div> -->
+        <div id="map"></div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="wrapper-local">
+            <h2 class="fs-4 text-success mb-4" id="typewriter"></h2>
+            <h2 class="fs-4">Ubicado en Tinajitas, Ver.</h2>
+            <p class="fs__info text-body" style="text-align: justify">
+              Un lugar donde el clima es óptimo y las tierras son las adecuadas
+              en las cuales se puede cosechar. Estamos ubicados en la Av Justo
+              Sierra en Tinajitas, municipio de Actopan en el estado de
+              Veracruz, cerca de los mejores lugares que puede pasar en familia
+              y/o amigos; aguas termales, restaurantes, destinos turísticos e
+              históricos, y tan solo 15 minutos de las playas. ¡Todo esto podrá
+              disfrutarlos con las mejores cosechas del lugar! ¡Visitenos y no
+              se arrepentiran!
+            </p>
+            <section class="d-flex justify-content-center" id="numeros-local">
+              <div class="fs__info">
+                <p class="text-success fs-6">Más de 20</p>
+                <p>Cosechas</p>
+              </div>
+              <div class="fs__info">
+                <p class="text-success fs-6">100%</p>
+                <p>Recomendado</p>
+              </div>
+              <div class="fs__info">
+                <p class="text-success fs-6">0%</p>
+                <p>Residuos químicos</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--========================================================== -->
+    <!--SECCION CONTACTO-->
+    <!--========================================================== -->
+
+    <section id="seccion-contacto">
+      <section id="texto1" class="w-100">
+        <div class="text1">
+          <h1 class="p-2 fs-4">Acerca de nosotros</h1>
+          <a href="acerca-de-nosotros.html" class="button">Leer más</a>
+        </div>
+      </section>
+      <section id="texto2" class="w-75">
+        <div class="text2">
+          <h1 class="p-2 fs-4">Contáctanos</h1>
+          <p class="p-2 fs-5">
+            Para peticiones, quejas y reclamos, llámanos al número:
+          </p>
+          <h2 class="p-2 fs-5"><i class="bi bi-telephone"></i> 296 110 6231</h2>
+          <h2 class="p-2 fs-5">
+            <i class="bi bi-clock"></i> Horario de servicio: 9 a 18 hrs
+          </h2>
+        </div>
+      </section>
+    </section>
+
+    <!--========================================================== -->
+    <!--BOTÓN DE IR HACIA ARRIBA-->
+    <!--========================================================== -->
+
+    <div id="button-up">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!--========================================================== -->
+    <!--FOOTER-->
+    <!--========================================================== -->
+
+    <footer
+      class="w-100 d-flex align-items-center justify-content-center flex-wrap"
+    >
+      <p class="fs-6 px-3 pt-3">
+        Cosechas Toto &copy; Todos los derechos reservados 2021
+      </p>
+      <div id="iconos">
+        <a href="https://www.facebook.com/alanjordy.hernandez/" target="_blank"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <!-- <a href="#"><i class="bi bi-twitter"></i></a> -->
+        <a href="https://www.instagram.com/byalanjordyhdez/" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+    <script src="index-assets/js/script.js"></script>
+
+    <!-- Google Maps Script -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAasqBP5sxI0RdpoLieg1olbh1mUTCrfmc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

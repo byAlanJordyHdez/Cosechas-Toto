@@ -1,0 +1,448 @@
+/* originally authored by Emprinnos - https://github.com/Emprinnos/menuResponsive */
+/* originally authored by tbcodes - https://github.com/tbcodes/Modern_Navbar_with_underline_animation_CSS_HTML */
+/* originally authored by Emprinnos - https://github.com/Emprinnos/bootStrapCompleto */
+
+/*===============PROIEDADES GLOBALES================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
+
+html {
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* line-height: 1.6; */
+  font-family: "Niramit", sans-serif;
+}
+
+/*===============SCROLL PERSONALIZADO================*/
+
+/* Tamaño del scroll */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Estilos barra (thumb) de scroll */
+body::-webkit-scrollbar-thumb {
+  background: #122b20;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #0b1b15;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0e221a;
+  /* box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+/* Estilos track de scroll */
+body::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #f0f0f0;
+}
+
+/*===================MENU==========================*/
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  /* width: 80%;
+  margin: auto; */
+
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+  width: 120px;
+  height: 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* min-height: 8vh; */
+  min-height: 10vh;
+  /* max-height: 10vh; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1b4332;
+}
+
+.ham {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ham span {
+  background-color: #f3f3f3;
+  display: block;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* .menu-bar {
+  position: relative;
+  left: -50px;
+  bottom: 40px;
+  width: 100;
+  box-sizing: border-box;
+  background: linear-gradient(to left, #dce35b36, #45b64936);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white; */
+/* font-size: 1.4em; */
+/* cursor: pointer;
+  display: none;
+} */
+
+.cerrar-bar {
+  position: relative;
+  left: -50px;
+  bottom: 40px;
+  width: 100;
+  box-sizing: border-box;
+  background: linear-gradient(to left, #dce35b36, #45b64936);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  /* font-size: 1.4em; */
+  cursor: pointer;
+  display: none;
+}
+
+.enlaces-menu {
+  display: flex;
+  padding: 0;
+}
+
+.enlaces-menu li {
+  padding: 0 40px;
+  list-style-type: none;
+  transition: 0.4s;
+  position: relative;
+
+  /* border: 1px solid #4800ff; */
+}
+
+.enlaces-menu li a {
+  text-decoration: none;
+  /* font-size: 1.8rem; */
+  font-size: 1.1em;
+  color: #f3f3f3;
+  font-weight: 500;
+}
+
+.enlaces-menu li:hover {
+  background: linear-gradient(to left, #dce35b36, #45b64936);
+}
+
+.enlaces-menu li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(to left, #dce35b, #45b649);
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.4s ease-out;
+}
+
+.enlaces-menu li:hover::before {
+  width: 100%;
+}
+
+/*===================CONTENIDO PAGINA==========================*/
+
+.conetnido-pagina {
+  /* padding-top: 75px */
+  margin-top: 75px;
+  /* margin-top: 10vh; */
+}
+
+/*===========================SECCION CONTACTO==================================*/
+
+#seccion-contacto {
+  min-height: 100%;
+  background-image: url(../img/sweet-potato-5600480_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#texto1,
+text1 {
+  background: rgb(27, 67, 50, 0.8);
+  padding: 18px;
+  /* width: 320px; */
+  /* height: 100%; */
+  text-align: center;
+}
+
+#texto1 h1 {
+  color: #ffffff;
+}
+
+#texto2,
+text2 {
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+  padding: 18px;
+  /* width: 50%; */
+  /* height: 100%; */
+  text-align: center;
+}
+
+#texto2 h1 {
+  color: #1b4332;
+}
+
+#texto2 p {
+  color: #1b4332;
+}
+
+#texto2 h2 {
+  color: #1b4332;
+}
+
+.button {
+  border: 1px solid #ffffff;
+  /* Anchura, estilo y color del borde */
+  padding: 10px;
+  /* Espacio alrededor del texto */
+  background-color: #ffffff;
+  /* Color del botón */
+  color: #1b4332;
+  /* Color del texto */
+  text-decoration: none;
+  /* Decoración texto */
+  border-radius: 50px;
+  /* Bordes redondos */
+  display: table;
+  margin: 10px auto;
+  position: relative;
+
+  font-size: 12px;
+}
+
+.button:hover {
+  opacity: 0.6;
+  /* Especifica la opacidad / transparencia de un elemento */
+  color: #1b4332;
+  /* Color del texto */
+  text-decoration: none;
+  /* Decoración texto */
+}
+
+/*=========================BOTÓN DE IR HACIA ARRIBA================================*/
+
+#button-up {
+  width: 60px;
+  height: 60px;
+  /* background: #46a2fd; */
+  background: rgba(14, 34, 26, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  /* border: 4px solid transparent; */
+  transition: all 300ms ease;
+  transform: scale(0);
+}
+
+#button-up:hover {
+  transform: scale(1.1);
+  /* border-color: rgba(0,0,0,0.1); */
+  background: rgba(14, 34, 26, 0.8);
+}
+
+/*=========================FOOTER================================*/
+
+footer {
+  background: #1b4332;
+  min-height: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA ANCHA================================*/
+
+/* @media (max-width:1360px){
+  
+  .carousel{
+    padding-top: 3.8rem
+  }
+} */
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+/* @media (max-width:1200px){
+  
+  .carousel{
+    padding-top: 3.8rem
+  }
+} */
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+@media (max-width: 768px) {
+  /* body{
+    overflow: hidden;
+  } */
+
+  /* .carousel{
+    padding-top: 7.4rem
+  } */
+
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    transition: 0.2s 0.1s;
+  }
+
+  /* .menu-bar {
+    display: block;
+  } */
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .enlaces-menu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92.8vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    width: 100%;
+  }
+
+  .enlaces-menu li {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+/* @media (max-width: 576px){
+  
+  #servicios-fila-2{
+    width: 100% !important;
+  }
+
+  #servicios-fila-1{
+    width: 100% !important;
+  }
+
+  .icono-wrap{
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+} */
+
+/*===================ANIMACIONES==========================*/
+
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.enlaces-menu.activado {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+/* .menu-bar.no-activado {
+  display: none;
+}
+
+.cerrar-bar.activado {
+  display: block;
+} */
+
+.br-1.animado {
+  transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+  opacity: 0;
+}
+
+.br-3.animado {
+  transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.ham.girar:hover {
+  transform: rotate(360deg);
+}
+
+/* .cerrar-bar.no-girar:hover{
+  transform: rotate(0deg);
+} */
